@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Item TItle</th>
+      <th scope="col">Item Genre</th>
+      <th scope="col">Item Go To Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let item of itemList">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.title}}</td>
+      <td>{{item.genre}}</td>
+      <td><button type="button" class="btn btn-primary" routerLink="/details/{{item.id}}">Details</button>
+      </td>
+    </tr>
+    
+   
+  </tbody>
+</table>
+
